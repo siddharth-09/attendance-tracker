@@ -31,7 +31,7 @@ export default function SubjectDashboard() {
   
   // Load attendance from sessionStorage
   useEffect(() => {
-    const stored = sessionStorage.getItem("attendance");
+    const stored = localStorage.getItem("attendance");
     if (stored) {
       setAttendance(JSON.parse(stored));
     }
